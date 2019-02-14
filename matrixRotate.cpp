@@ -30,10 +30,10 @@ int main(int argc, char const *argv[])
     {
         for(auto&& j : i)
         {
-            std::cout << std::to_string(j);
+            std::cout << j;
         }
     }
-    
+    system("pause");
     return 0;
 }
 
