@@ -12,7 +12,7 @@ std::array<std::array<int, 3>, 3> transpose(std::array<std::array<int, 3>, 3> un
     {
         for(size_t j = 0; j < unprocessedArray.size(); j++)
         {
-            transposedArray[i,j] = unprocessedArray[j,i];
+            transposedArray[i][j] = unprocessedArray[j][i];
         }
     }
     return transposedArray;
@@ -32,6 +32,7 @@ int main(int argc, char const *argv[])
         {
             std::cout << j;
         }
+        std::cout << std::endl;
     }
     system("pause");
     return 0;
